@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QuanLyThuChi</string>
+
+
+    <string name="action_add"> Thêm mới </string>
+    <string name="action_save">Lưu  </string>
+    <string name="action_quit">Thoát </string>
+
+
+</resources>

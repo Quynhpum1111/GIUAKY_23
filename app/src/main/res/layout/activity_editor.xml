@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập thông tin thu chi"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nội dung"
+                android:textSize="18dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorText"/>
+            <EditText
+                android:id="@+id/edt_noidung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nhập nội dung vào đây"
+                android:textSize="20dp"
+                android:textColor="@color/colorText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số tiền"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorText"/>
+        <EditText
+            android:id="@+id/edt_sotien"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Nhập số tiền vào đây"
+            android:textSize="20dp"
+            android:textColor="@color/colorText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hình thức"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorText"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton android:id="@+id/radio_thu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_chi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/button_them"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButton"
+            android:layout_marginRight="10dp"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/button_nhaplai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButton"
+            android:layout_marginRight="10dp"
+            android:text="Nhập lại" />
+
+        <Button
+            android:id="@+id/button_hienthi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButton"
+            android:layout_marginRight="10dp"
+            android:text="Hiển thị" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
